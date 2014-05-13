@@ -1,0 +1,40 @@
+catalog:
+  services:
+    - id: 922c68c2-3c3b-44b7-8d5c-7936448f2fd4
+      name: skeleton-repo
+      description: Provides a skeleton CF service
+      bindable: true
+      tags:
+        - skeleton
+      metadata:
+        displayName: Skeleton Service
+        imageUrl: https://pbs.twimg.com/profile_images/464827870171262976/7kPCOBjQ.png
+        longDescription: Empty skeleton for Cloud Foundry services + application consumers
+        providerDisplayName: Skeleton
+      plans:
+        - id: 71b4cdb7-edee-41aa-9a65-7885b5d19fdc
+          name: public
+          description: Public plan
+          metadata:
+            bullets:
+              - Basic public plan
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: MONTHLY
+            displayName: Public
+        - id: 9db09f9a-2dae-4df8-aa13-6344bc49f61b
+          name: private
+          description: Private plan
+          metadata:
+            bullets:
+              - Basic private plan
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: MONTHLY
+            displayName: Public
+
+basic_auth:
+  username: admin
+  password: password
